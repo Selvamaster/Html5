@@ -1,0 +1,25 @@
+<head>
+<style>
+div.shw { font-size:15;color:DarkMagenta;background-color:;border-color:black;}
+</style>
+<script type="text/javascript" src="http://www.hscripts.com/tutorials/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#param span:visible").click(function(){
+$(this).css("background-color","pink");
+});
+$("#param p").click(function (){
+$("span:hidden").show("slow").addClass("shw");
+$("#param p ").text("Press and Check visible Boxes");
+});
+}); 
+</script>
+<div id=param>
+<br><p style="cursor:pointer;color:DarkOliveGreen;font-weight:900px;">Click Here To See Hidden Elements</p>
+<span style="font-size:15;width:60;height:30;border:2px solid;float:left;margin:0 3px;display:none;"> Hidden</span>
+<span style="font-size:15;width:60;height:30;border:2px solid;border-color:Gold;float:left;margin:0 3px;">   Visible</span>
+<span style="font-size:15;width:60;height:30;border:2px solid;float:left;margin:0 3px;display:none;">   Hidden</span>
+<span style="font-size:15;width:60;height:30;border:2px solid;border-color:Gold;float:left;margin:0 3px;"> Visible</span>
+<span style="font-size:15;width:60;height:30;border:2px solid;float:left;margin:0 3px;display:none;">Hidden</span>
+</div>
+<br><br><br>
