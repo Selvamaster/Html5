@@ -1,0 +1,16 @@
+<script type="text/javascript" src="http://www.hscripts.com/tutorials/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#com").val("");
+$("#com").mouseenter(function(){
+$("#com").val("Mouse Enter event is performed here........");
+});
+$("#com").mouseout(function(){
+$("#com").val("");
+});
+});
+</script>
+<br>
+<font color="Red">Mouse Click on Comment Box.</font><br><br>
+Comment :<input type=\'text\' id="com" size=40><br>
+<br>
